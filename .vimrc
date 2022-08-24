@@ -1,3 +1,9 @@
+" Controls tab spacing
+set expandtab
+set sw=2
+set ts=2
+set sts=2
+
 " Plugins vim-plug (https://github.com/junegunn/vim-plug)
 call plug#begin('~/.vim/plugged')
 
