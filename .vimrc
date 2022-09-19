@@ -14,6 +14,13 @@ Plug 'tpope/vim-commentary'     " use 'gcc' to comment/uncomment a line or a blo
 Plug 'ervandew/supertab'        " Supertab adds code completion to the <Tab> key
 Plug 'tpope/vim-fugitive'       " Use git inside vim, :Git
 Plug 'Yggdroot/indentLine'      " Show indentation lines
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+" (Optional) Multi-entry selection UI.
+Plug 'junegunn/fzf'
 
 call plug#end()
 
@@ -62,3 +69,8 @@ set noshowmode
 
 " For .yaml files, set ident to 2 spaces
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" Rust code completion
+let g:LanguageClient_serverCommands = {
+\ 'rust': ['rust-analyzer'],
+\ }
