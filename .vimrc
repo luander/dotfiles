@@ -49,6 +49,9 @@ set number relativenumber
 " Essential key remaps
 inoremap jk <ESC>
 noremap ; :
+noremap <C-d> <C-d>zz
+noremap <C-u> <C-u>zz
+
 
 " Identation, syntax and encoding
 filetype plugin indent on
