@@ -11,6 +11,19 @@ lsp.set_preferences({
     configure_diagnostics = true,
 })
 
+lsp.setup_nvim_cmp({
+    documentation = {
+        max_height = 25,
+        max_width = 60,
+        border = 'rounded',
+        col_offset = 0,
+        side_padding = 1,
+        winhighlight = 'Normal:Normal,FloatBorder:Normal,CursorLine:Visual,Search:None',
+        zindex = 1001
+    }
+})
+
+
 lsp.nvim_workspace()
 lsp.setup()
 
