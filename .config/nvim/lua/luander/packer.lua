@@ -91,6 +91,12 @@ return require('packer').startup(function(use)
     -- Adds extra functionality over rust analyzer
     use("simrat39/rust-tools.nvim")
 
+    -- Auto pairs
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
+
     if is_bootstrap then
         require('packer').sync()
     end
