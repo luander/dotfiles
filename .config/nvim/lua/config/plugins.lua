@@ -23,9 +23,6 @@ return require('packer').startup(function(use)
     -- show git modifications inline
     use 'lewis6991/gitsigns.nvim'
 
-    -- smooth scrolling
-    use 'karb94/neoscroll.nvim'
-
     -- show nice status line
     use 'nvim-lualine/lualine.nvim'
 
