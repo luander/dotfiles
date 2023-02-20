@@ -13,11 +13,8 @@ git checkout -f main
 ```
 
 ## Initial setup
-From within Neovim:
-```
-:PackerSync
-```
-Restart Neovim to load all plugins and configurations
+Upon start, Lazy will begin installation of plugins. Once everything is 
+installed, restart Neovim.
 
 ## Finding out keymaps
 `:nmap` -> shows all key maps for normal mode
