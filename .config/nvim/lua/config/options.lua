@@ -35,9 +35,8 @@ vim.opt.updatetime = 50
 vim.opt.iskeyword:append("-")
 vim.opt.isfname:append("@-@")
 
-
 -- show 80 char column
-vim.opt.colorcolumn = "80"
+-- vim.opt.colorcolumn = "80"
 
 -- remap leader to <space> key
 vim.g.mapleader = " "
