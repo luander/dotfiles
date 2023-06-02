@@ -11,6 +11,9 @@ return {
     },
   },
   {
+    "simrat39/rust-tools.nvim",
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       filesystem = {
