@@ -11,7 +11,7 @@ return {
     },
     config = {
       icons = {
-        passed = "✓",
+        passed = "",
         failed = "",
       },
     },
