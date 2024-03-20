@@ -1,7 +1,15 @@
-[includeIf "gitdir:~/work/"]
-  path = ~/.gitconfig-work
 [includeIf "gitdir:~/personal/"]
-  path = ~/.gitconfig-personal
+  path = ~/.gitconfig-github
+
+[includeIf "gitdir:~/work/hnk/"]
+  path = ~/.gitconfig-github
+
+[includeIf "gitdir:~/work/sbp/"]
+  path = ~/.gitconfig-work
+
+[includeIf "gitdir:~/work/ns/"]
+  path = ~/.gitconfig-work
+
 [init]
 	defaultBranch = main
 [commit]
