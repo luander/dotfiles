@@ -15,7 +15,8 @@
 [commit]
 	gpgsign = true
 [credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager
+	helper = 
+	helper = /usr/local/bin/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [credential "https://sbp.gitlab.schubergphilis.com"]
