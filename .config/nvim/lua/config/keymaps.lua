@@ -44,3 +44,9 @@ end, { desc = "Expand Rust Macros" })
 vim.keymap.set("n", "<leader>mr", function()
   vim.cmd.RustLsp("rebuildProcMacros")
 end, { desc = "Rebuild Rust Macros" })
+vim.keymap.set("i", "<C-J>", 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false,
+  desc = "CRTL+J to accept copilot suggestion",
+})
+vim.g.copilot_no_tab_map = true

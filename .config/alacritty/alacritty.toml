@@ -1,0 +1,22 @@
+[window]
+decorations = "buttonless"
+opacity = 0.9
+blur = true
+startup_mode = "Maximized"
+decorations_theme_variant = "Dark"
+
+[scrolling]
+history = 100000
+
+[font]
+normal = { family = "FiraCode Nerd Font Propo" }
+size = 13
+
+[colors.primary]
+background = "#000000"
+
+[cursor]
+style = { shape = "Block", blinking = "On"}
+
+[mouse]
+hide_when_typing = true
