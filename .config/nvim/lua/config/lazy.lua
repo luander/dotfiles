@@ -1,20 +1,21 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
   -- bootstrap lazy.nvim
   -- stylua: ignore
   vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", lazypath })
 end
-vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
+vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
-    { import = "lazyvim.plugins.extras.lang.rust" },
-    { import = "lazyvim.plugins.extras.dap.core" },
-    { import = "lazyvim.plugins.extras.test.core" },
-    { import = "lazyvim.plugins.extras.lang.terraform" },
+    { import = "lazyvim.plugins.extras.lang.rust" }, -- Adds support for Rust language
+    { import = "lazyvim.plugins.extras.dap.core" }, -- Adds support for debugging
+    { import = "lazyvim.plugins.extras.test.core" }, -- Adds support to execute unit tests inside Neovim
+    { import = "lazyvim.plugins.extras.lang.terraform" }, -- Adds support for Terraform language
+    { import = "lazyvim.plugins.extras.coding.copilot" }, -- Enable Copilot integration
     -- { import = "lazyvim.plugins.extras.lang.go" },
     -- { import = "lazyvim.plugins.extras.lang.python" },
     -- import/override with your plugins

@@ -5,6 +5,7 @@ return {
   -- add tokyonight theme
   {
     "folke/tokyonight.nvim",
+    name = "tokyonight",
     lazy = false,
     priority = 1000,
     opts = {},
@@ -48,11 +49,19 @@ return {
       },
     },
   },
+  {
+    "catppuccin/nvim",
+    lazy = true,
+    name = "catppuccin",
+    opts = {
+      transparent_background = true,
+    },
+  },
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }
