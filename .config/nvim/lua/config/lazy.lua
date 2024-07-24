@@ -16,7 +16,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.test.core" }, -- Adds support to execute unit tests inside Neovim
     { import = "lazyvim.plugins.extras.lang.terraform" }, -- Adds support for Terraform language
     { import = "lazyvim.plugins.extras.coding.copilot" }, -- Enable Copilot integration
-    -- { import = "lazyvim.plugins.extras.lang.go" },
+    { import = "lazyvim.plugins.extras.lang.go" }, -- Adds support for Go language
     -- { import = "lazyvim.plugins.extras.lang.python" },
     -- import/override with your plugins
     { import = "plugins" },
