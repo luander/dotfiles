@@ -50,3 +50,7 @@ vim.keymap.set("i", "<C-J>", 'copilot#Accept("\\<CR>")', {
   desc = "CRTL+J to accept copilot suggestion",
 })
 vim.g.copilot_no_tab_map = true
+-- LSP Rename
+vim.keymap.set("n", "<leader>r", function()
+  vim.lsp.buf.rename()
+end, { desc = "Rename symbol" })

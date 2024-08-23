@@ -9,7 +9,7 @@ decorations_theme_variant = "Dark"
 history = 100000
 
 [font]
-normal = { family = "FiraCode Nerd Font" }
+normal = { family = "FiraCode Nerd Font Mono" }
 size = 15
 
 [colors.primary]
