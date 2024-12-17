@@ -22,6 +22,7 @@ vim.opt.smartcase = true
 
 -- termguicolors for theme to work
 vim.opt.termguicolors = true
+vim.opt.background = "dark"
 
 -- split windows
 vim.opt.splitright = true
@@ -40,3 +41,7 @@ vim.opt.isfname:append("@-@")
 
 -- remap leader to <space> key
 vim.g.mapleader = " "
+
+-- backspace
+-- allow backspace on indent, end of line or isert mode start position
+vim.opt.backspace = "indent,eol,start"

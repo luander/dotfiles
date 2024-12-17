@@ -9,4 +9,10 @@ return {
   {
     "m4xshen/smartcolumn.nvim",
   },
+  {
+    "snacks.nvim",
+    opts = {
+      scroll = { enabled = false },
+    },
+  },
 }

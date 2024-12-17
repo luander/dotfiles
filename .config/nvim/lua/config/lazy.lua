@@ -12,10 +12,10 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
     { import = "lazyvim.plugins.extras.lang.rust" }, -- Adds support for Rust language
-    { import = "lazyvim.plugins.extras.dap.core" }, -- Adds support for debugging
+    { import = "lazyvim.plugins.extras.dap.core", opts = { lazy = true } }, -- Adds support for debugging
     { import = "lazyvim.plugins.extras.test.core" }, -- Adds support to execute unit tests inside Neovim
     { import = "lazyvim.plugins.extras.lang.terraform" }, -- Adds support for Terraform language
-    { import = "lazyvim.plugins.extras.coding.copilot" }, -- Enable Copilot integration
+    { import = "lazyvim.plugins.extras.ai.copilot" }, -- Enable Copilot integration
     { import = "lazyvim.plugins.extras.lang.go" }, -- Adds support for Go language
     -- { import = "lazyvim.plugins.extras.lang.python" },
     -- import/override with your plugins
