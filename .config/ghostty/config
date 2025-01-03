@@ -1,0 +1,7 @@
+font-family = "Fira Code Retina Nerd Font Complete Mono"
+font-size = 16
+theme = catppuccin-mocha
+background = #000000
+background-opacity = 0.99
+background-blur-radius = 20
+macos-titlebar-style = hidden
