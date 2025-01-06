@@ -1,3 +1,6 @@
+-- telescope as default file picker
+vim.g.lazyvim_picker = "telescope"
+
 -- line number
 vim.opt.nu = true
 vim.opt.relativenumber = true
