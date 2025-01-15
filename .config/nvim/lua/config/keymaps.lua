@@ -32,7 +32,12 @@ vim.keymap.set("n", "<leader>i", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end, { desc = "Toggle inlay hints" })
 vim.keymap.set("n", "<leader>ss", ":Telescope live_grep <CR>", { desc = "Telescope live grep" })
-vim.keymap.set("n", "<leader>e", ":Neotree float toggle<CR>")
+vim.keymap.set(
+  "n",
+  "<leader>e",
+  ":Neotree toggle reveal=true position=float<CR>",
+  { desc = "File tree (reveal current)" }
+)
 -- debug keymaps
 vim.keymap.set("n", "<leader>dt", ":DapToggleBreakpoint<CR>", { desc = "Toggle Breakpoint" })
 vim.keymap.set("n", "<leader>dx", ":DapTerminate<CR>", { desc = "Terminate debug session" })
