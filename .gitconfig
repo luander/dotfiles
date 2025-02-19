@@ -25,6 +25,7 @@
 	provider = bitbucket
 [core]
 	excludesfile = /Users/lribeiro/.gitignore_global
+	editor = nvim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
