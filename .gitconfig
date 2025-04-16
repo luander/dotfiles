@@ -15,17 +15,24 @@
 [commit]
 	gpgsign = true
 [credential]
-	helper = 
 	helper = /usr/local/bin/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [credential "https://sbp.gitlab.schubergphilis.com"]
 	provider = gitlab
-[credential "https://bitbucket.topaas.ns.nl"]
-	provider = bitbucket
 [core]
 	excludesfile = /Users/lribeiro/.gitignore_global
 	editor = nvim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
+[maintenance]
+	repo = /Users/lribeiro/work/hnk/iot-gateway
+[alias]
+	ca = commit --amend --no-edit
+	pf = push --force-with-lease
+	c = commit -S
+	d = diff
+	s = status -s -b
+	wa = worktree add
+	wl = worktree list
