@@ -15,7 +15,7 @@
 [commit]
 	gpgsign = true
 [credential]
-	helper = /usr/local/bin/git-credential-manager
+	helper = manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [credential "https://sbp.gitlab.schubergphilis.com"]
@@ -36,3 +36,11 @@
 	s = status -s -b
 	wa = worktree add
 	wl = worktree list
+    wr = worktree remove
+    l = log --graph
+    co = checkout
+    cane = commit --amend --no-edit
+[log]
+  date = relative
+[format]
+  pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
